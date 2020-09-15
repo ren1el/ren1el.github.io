@@ -1,12 +1,15 @@
 import React from "react"
+import "typeface-inter"
+import "../styles/global.module.css"
 import Layout from "../components/layout"
-import Header from "../components/header"
+import Intro from "../components/intro"
+import About from "../components/about"
 
 const Home = () => {
   return (
     <Layout>
-      <Header />
-      <p>Hello World</p>
+      <Intro />
+      <About />
     </Layout>
   )
 }
