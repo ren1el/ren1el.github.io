@@ -6,10 +6,10 @@ const About = () => {
   return (
     <section>
       <h2>A lil’ about me:</h2>
-      <div className={aboutStyles.aboutInfo}>
-        <div className={aboutStyles.me}></div>
-        <div className={aboutStyles.aboutMeText}>
-          <div>
+      <div className={aboutStyles.about}>
+        <div className={aboutStyles.picture}></div>
+        <div className={aboutStyles.text}>
+          <div className={aboutStyles.blurb}>
             My name is{" "}
             <span className={aboutStyles.specialText}>Reniel Ocampo</span> and
             I’m a recent computer science grad from the University of
@@ -25,8 +25,8 @@ const About = () => {
             with my ukulele. I also really, really like Ariana Grande.
           </div>
 
-          <div>
-            <strong>You can find me in these places:</strong>
+          <div className={aboutStyles.links}>
+            <strong>You can also find me at these places:</strong>
             <ul className={aboutStyles.aboutMeList}>
               <li>
                 <LinkButton

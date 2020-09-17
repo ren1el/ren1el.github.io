@@ -1,20 +1,22 @@
-.about-info {
+.about {
   display: flex;
 }
 
-.me {
+.picture {
   width: 300px;
   height: 300px;
   border-radius: 1.5626rem;
   background-color: #6f2525;
-  background: url("../images/me.png");
+  /* background: url("../images/me.png");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  float: left;
+  box-shadow: 0px 0px 10px 5px #efefef;
 }
 
-.about-me-text {
+.text {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1.5em;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -46,5 +48,31 @@
 .about-me-list li {
   font-weight: 600;
   display: inline-block;
-  margin-right: 1rem;
+  margin: 1em;
+}
+
+@media (max-width: 1184px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blurb {
+    padding-bottom: 1rem;
+  }
+
+  .links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-me-list li {
+    display: block;
+  }
+
+  .text {
+    padding: 1.5em 0;
+  }
 }

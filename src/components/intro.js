@@ -3,7 +3,7 @@ import introStyles from "../styles/intro.module.css"
 
 const Intro = () => {
   return (
-    <section className={introStyles.intro}>
+    <section className={introStyles.introWrapper}>
       <p className={introStyles.hello}>Howdy! I’m Reniel.</p>
       <p className={introStyles.welcome}>Welcome to my portfolio.</p>
     </section>

@@ -7,5 +7,12 @@
 }
 
 .content-wrapper {
-  width: 68.75rem;
+  max-width: 68.75rem;
+  margin: 0 2.5em;
+}
+
+@media (max-width: 575.98px) {
+  .content-wrapper {
+    margin: 0 2rem;
+  }
 }
