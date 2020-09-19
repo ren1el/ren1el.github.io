@@ -13,6 +13,7 @@
   border-radius: 1.5626rem;
   outline: none;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .primary-btn:hover {

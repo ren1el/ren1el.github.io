@@ -5,8 +5,12 @@ const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li>About</li>
-        <li>Projects</li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
         <li>Résumé</li>
         <li>Contact</li>
       </ul>

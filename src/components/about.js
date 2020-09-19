@@ -4,10 +4,16 @@ import aboutStyles from "../styles/about.module.css"
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <h2>A lil’ about me:</h2>
       <div className={aboutStyles.about}>
-        <div className={aboutStyles.picture}></div>
+        <div className={aboutStyles.pictureWrapper}>
+          <img
+            src={"https://i.postimg.cc/8ctFrHd2/IMG-4458.png"}
+            className={aboutStyles.picture}
+            alt="Me!"
+          />
+        </div>
         <div className={aboutStyles.text}>
           <div className={aboutStyles.blurb}>
             My name is{" "}
