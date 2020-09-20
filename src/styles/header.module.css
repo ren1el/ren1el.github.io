@@ -7,6 +7,11 @@ header {
   align-items: center;
 }
 
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .header-wrapper {
   width: 68.75rem;
   height: 100%;

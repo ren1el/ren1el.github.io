@@ -1,0 +1,42 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.github-link {
+  display: flex;
+  justify-content: center;
+}
+
+.github-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000000;
+  height: 2.5rem;
+  padding: 1rem 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 1.5626rem;
+  outline: none;
+  text-decoration: none;
+  transform: translateY(0%);
+  transition: background-color 0.3s, transform 0.5s;
+}
+
+.github-btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.5s;
+}
+
+.ml {
+  margin-left: 0.5em;
+}

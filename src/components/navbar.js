@@ -12,7 +12,9 @@ const Navbar = () => {
           <a href="#projects">Projects</a>
         </li>
         <li>Résumé</li>
-        <li>Contact</li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
   )

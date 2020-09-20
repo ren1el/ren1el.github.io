@@ -5,6 +5,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
 }
 
 .footer-wrapper {
@@ -17,6 +18,5 @@ footer {
 }
 
 .brand {
-  color: #ffffff;
   margin: 0;
 }

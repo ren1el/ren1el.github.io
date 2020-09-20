@@ -13,7 +13,8 @@
   border-radius: 1.5626rem;
   outline: none;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transform: translateY(0%);
+  transition: background-color 0.3s, transform 0.5s;
 }
 
 .primary-btn:hover {
@@ -21,4 +22,6 @@
   background-color: #ffffff;
   border: 2px solid #6f2525;
   cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.5s;
 }

@@ -16,19 +16,14 @@ const About = () => {
         </div>
         <div className={aboutStyles.text}>
           <div className={aboutStyles.blurb}>
-            My name is{" "}
-            <span className={aboutStyles.specialText}>Reniel Ocampo</span> and
-            I’m a recent computer science grad from the University of
-            California, Irvine. I attribute my start into programming when I
-            began coding static HTML pages on Neopets. I’ve since grown an
-            interest in{" "}
-            <span className={aboutStyles.specialText}>web development</span>,{" "}
-            <span className={aboutStyles.specialText}>graphic design</span>, and{" "}
-            <span className={aboutStyles.specialText}>
-              computer architecture
-            </span>
-            . Aside from developing, I like to read, go to concerts, and fiddle
-            with my ukulele. I also really, really like Ariana Grande.
+            My name is <strong>Reniel Ocampo</strong> and I’m a recent computer
+            science grad from the{" "}
+            <strong>University of California, Irvine</strong>. I attribute my
+            start into programming when I began coding static HTML pages on
+            Neopets. I’ve since grown an interest in web development, graphic
+            design, and computer architecture. Aside from developing I’m a big
+            reader, concert goer, and ukulele fiddler. I also really, really
+            like Ariana Grande.
           </div>
 
           <div className={aboutStyles.links}>

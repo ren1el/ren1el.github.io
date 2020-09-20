@@ -1,6 +1,7 @@
 import React from "react"
 import projectsStyles from "../styles/projects.module.css"
 import Card from "./card"
+import { FaGithub } from "react-icons/fa"
 
 const Projects = () => {
   return (
@@ -29,7 +30,7 @@ const Projects = () => {
         />
         <Card
           order={2}
-          thumbnail={"https://i.postimg.cc/fWr2y6HT/zyllabi.png"}
+          thumbnail={"https://i.postimg.cc/FHw8hsVX/1-copy.png"}
           type={"Research Project"}
           title={"Animal Actions"}
           description={
@@ -49,6 +50,17 @@ const Projects = () => {
           tags={["Ionic", "Mobile App"]}
           url={""}
         />
+      </div>
+      <div className={projectsStyles.githubLink}>
+        <a
+          className={projectsStyles.githubBtn}
+          href={"https://github.com/ren1el"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+          <span className={projectsStyles.ml}>{"View more on GitHub"}</span>
+        </a>
       </div>
     </section>
   )

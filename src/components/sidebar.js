@@ -18,10 +18,22 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           X
         </button>
         <ul className={sidebarStyles.links}>
-          <li className={sidebarStyles.link}>About</li>
-          <li className={sidebarStyles.link}>Projects</li>
+          <li className={sidebarStyles.link}>
+            <a href="#about" onClick={() => setIsSidebarOpen(false)}>
+              About
+            </a>
+          </li>
+          <li className={sidebarStyles.link}>
+            <a href="#projects" onClick={() => setIsSidebarOpen(false)}>
+              Projects
+            </a>
+          </li>
           <li className={sidebarStyles.link}>Résumé</li>
-          <li className={sidebarStyles.link}>Contact</li>
+          <li className={sidebarStyles.link}>
+            <a href="#contact" onClick={() => setIsSidebarOpen(false)}>
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </>

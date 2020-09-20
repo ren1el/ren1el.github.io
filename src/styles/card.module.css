@@ -7,7 +7,15 @@
 .thumbnail {
   width: 400px;
   border-radius: 1.5626rem;
-  box-shadow: 0px 0px 10px 10px #efefef;
+  box-shadow: 0px 0px 10px 5px #eeeeee;
+  transform: translateY(0%);
+  transition: transform 0.5s, box-shadow 0.3s;
+}
+
+.thumbnail:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 10px 5px #e2e2e2;
+  transition: transform 0.5s, box-shadow 0.3s;
 }
 
 /* .thumbnail:hover {

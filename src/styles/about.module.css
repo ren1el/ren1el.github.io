@@ -20,11 +20,15 @@
 
 .text {
   flex: 1;
-  padding: 1.5em;
+  padding-left: 1.5em;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.blurb {
+  margin-bottom: 0.5em;
 }
 
 .special-text {
@@ -64,6 +68,10 @@
     align-items: center;
   }
 
+  .text {
+    padding: 1.5em;
+  }
+
   .blurb {
     padding-bottom: 1rem;
   }
@@ -73,7 +81,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 750px) {
   .about-me-list {
     flex-direction: column;
   }
