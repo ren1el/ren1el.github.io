@@ -32,7 +32,7 @@ const Projects = ({ isAboutAnimationDone }) => {
           type={"Side Project"}
           title={"Zyllabi"}
           description={
-            "A full stack web application that crowd-sources and organizes course syllabi from UC Irvine."
+            "A full stack web application that crowd-sources and organizes course syllabi from UC Irvine. I wanted to learn how to design an API and create an application with a working backend. I started this project in hopes that it would alleviate the stress of signing up for classes that don’t have much feedback online."
           }
           tags={[
             "React",
@@ -53,7 +53,7 @@ const Projects = ({ isAboutAnimationDone }) => {
           type={"Research Project"}
           title={"Animal Actions"}
           description={
-            "A published Alexa skill designed for kids that asks them to listen and respond to sounds of animals and their characterized actions."
+            "A published Alexa skill that quizzes kids on the sounds of animals and their characterized actions. I worked with a team under a PhD student to iteratively develop this application and research ways to design voice user interfaces for children. I was mainly in charge of refactoring the codebase and implementing new features such as visuals."
           }
           tags={["Amazon Alexa", "Node.js", "Voice interaction"]}
           url={""}
@@ -65,9 +65,9 @@ const Projects = ({ isAboutAnimationDone }) => {
           type={"Side Project"}
           title={"E-commerce Landing Page Concept"}
           description={
-            "A responsive e-commerce landing page that mimics online fashion product websites. Created using HTML, CSS and pure JavaScript and implements design qualities similar to professionally made websites (sliding sidebar, CSS & JavaScript animations, CSS flexbox techniques, responsiveness with media queries, etc.)"
+            "A responsive e-commerce landing page that mimics online fashion product websites. This static site was an exercise on how well I could use pure HTML, CSS, and JavaScript to apply design qualities similar to professionally made websites (including typography design, animations, flexbox techniques, responsiveness, etc.)"
           }
-          tags={["Web Development"]}
+          tags={["HTML", "CSS", "JavaScript", "Web development", "Web design"]}
           url={""}
         />
         <Card
@@ -77,9 +77,9 @@ const Projects = ({ isAboutAnimationDone }) => {
           type={"Class Project"}
           title={"Sleep Tracker"}
           description={
-            "A minimal, hybrid iOS application that allows users to log overnight sleep and their “sleepiness” throughout the day"
+            "A minimal, hybrid iOS application that allows users to log overnight sleep and their “sleepiness” throughout the day. This was a project for my user interaction software class and demonstrates my ability to create simple mobile interfaces and adapt to new frameworks/libraries."
           }
-          tags={["Ionic", "Mobile App"]}
+          tags={["Ionic", "Mobile app development"]}
           url={""}
         />
       </div>
