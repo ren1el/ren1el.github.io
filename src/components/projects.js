@@ -28,7 +28,7 @@ const Projects = ({ isAboutAnimationDone }) => {
         <Card
           isAboutAnimationDone={isAboutAnimationDone}
           order={1}
-          thumbnail={"https://i.postimg.cc/vHKpMJn9/3.png"}
+          thumbnail={"zyllabi.png"}
           type={"Side Project"}
           title={"Zyllabi"}
           description={
@@ -49,7 +49,7 @@ const Projects = ({ isAboutAnimationDone }) => {
         <Card
           isAboutAnimationDone={isAboutAnimationDone}
           order={2}
-          thumbnail={"https://i.postimg.cc/FHw8hsVX/1-copy.png"}
+          thumbnail={"animalactions.png"}
           type={"Research Project"}
           title={"Animal Actions"}
           description={
@@ -61,7 +61,7 @@ const Projects = ({ isAboutAnimationDone }) => {
         <Card
           isAboutAnimationDone={isAboutAnimationDone}
           order={3}
-          thumbnail={"https://i.postimg.cc/bw8Npj8r/2-copy.png"}
+          thumbnail={"ecommerce.png"}
           type={"Side Project"}
           title={"E-commerce Landing Page Concept"}
           description={
@@ -73,7 +73,7 @@ const Projects = ({ isAboutAnimationDone }) => {
         <Card
           isAboutAnimationDone={isAboutAnimationDone}
           order={4}
-          thumbnail={"https://i.postimg.cc/fWr2y6HT/zyllabi.png"}
+          thumbnail={"zyllabi.png"}
           type={"Class Project"}
           title={"Sleep Tracker"}
           description={

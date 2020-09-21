@@ -35,3 +35,8 @@ header {
   color: #ffffff;
   margin: 0;
 }
+
+.brand a {
+  color: #ffffff;
+  text-decoration: none;
+}

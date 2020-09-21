@@ -25,7 +25,9 @@ const Header = () => {
       className={`${isHeaderShown ? headerStyles.show : headerStyles.hide}`}
     >
       <div className={headerStyles.headerWrapper}>
-        <h1 className={headerStyles.brand}>RO</h1>
+        <h1 className={headerStyles.brand}>
+          <a href="http://localhost:8000/">RO</a>
+        </h1>
         {windowWidth > 991.98 ? (
           <Navbar />
         ) : (

@@ -1,9 +1,24 @@
 import React, { useEffect } from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import { motion, useAnimation } from "framer-motion"
 import LinkButton from "../components/linkButton"
 import aboutStyles from "../styles/about.module.css"
 
 const About = ({ setIsAboutAnimationDone }) => {
+  const data = useStaticQuery(graphql`
+    query Image {
+      image: file(relativePath: { eq: "about/me.png" }) {
+        id
+        childImageSharp {
+          fixed(width: 300, quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
   const headingControls = useAnimation()
   const sectionControls = useAnimation()
 
@@ -27,13 +42,11 @@ const About = ({ setIsAboutAnimationDone }) => {
         initial={{ opacity: 0, y: 50 }}
         animate={sectionControls}
       >
-        <div className={aboutStyles.pictureWrapper}>
-          <img
-            src={"https://i.postimg.cc/8ctFrHd2/IMG-4458.png"}
-            className={aboutStyles.picture}
-            alt="Me!"
-          />
-        </div>
+        <Img
+          className={`${aboutStyles.picture} ${aboutStyles.imgAnimation}`}
+          fixed={data.image.childImageSharp.fixed}
+          alt="Me"
+        />
         <div className={aboutStyles.text}>
           <div className={aboutStyles.blurb}>
             My name is <strong>Reniel Ocampo</strong> and I’m a recent computer
