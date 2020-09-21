@@ -8,7 +8,7 @@ const Burger = ({ setIsSidebarOpen }) => {
       role="button"
       onClick={() => setIsSidebarOpen(true)}
       onKeyDown={() => setIsSidebarOpen(true)}
-      tabindex={0}
+      tabIndex={0}
     >
       <div className={burgerStyles.line}></div>
       <div className={burgerStyles.line}></div>

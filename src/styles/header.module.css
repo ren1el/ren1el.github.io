@@ -5,11 +5,21 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-header a {
-  color: #ffffff;
-  text-decoration: none;
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
 }
 
 .header-wrapper {

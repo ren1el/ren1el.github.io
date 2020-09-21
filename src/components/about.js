@@ -1,12 +1,41 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { useInView } from "react-intersection-observer"
+import { motion, useAnimation } from "framer-motion"
 import LinkButton from "../components/linkButton"
 import aboutStyles from "../styles/about.module.css"
 
-const About = () => {
+const About = ({ setIsAboutAnimationDone }) => {
+  const [ref, inView] = useInView()
+  const headingControls = useAnimation()
+  const sectionControls = useAnimation()
+
+  useEffect(() => {
+    const animationSequence = async () => {
+      if (inView) {
+        await headingControls.start({ opacity: 1, x: 0 })
+        await sectionControls.start({ opacity: 1, y: 0 })
+        setIsAboutAnimationDone(true)
+      }
+    }
+
+    animationSequence()
+  }, [headingControls, sectionControls, inView, setIsAboutAnimationDone])
+
   return (
     <section id="about">
-      <h2>A lil’ about me:</h2>
-      <div className={aboutStyles.about}>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: -50 }}
+        animate={headingControls}
+      >
+        <h2>A lil’ about me:</h2>
+      </motion.div>
+      <motion.div
+        className={aboutStyles.about}
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={sectionControls}
+      >
         <div className={aboutStyles.pictureWrapper}>
           <img
             src={"https://i.postimg.cc/8ctFrHd2/IMG-4458.png"}
@@ -56,7 +85,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

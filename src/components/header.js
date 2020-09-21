@@ -1,18 +1,29 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Navbar from "../components/navbar"
 import Sidebar from "../components/sidebar"
 import headerStyles from "../styles/header.module.css"
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [isHeaderShown, setIsHeaderShown] = useState(true)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
-  useEffect(() => {
-    window.addEventListener("resize", () => setWindowWidth(window.innerWidth))
-  }, [])
+  let prevScrollPos = window.pageYOffset
+
+  window.addEventListener("scroll", () => {
+    const currentScrollPos = window.pageYOffset
+    prevScrollPos > currentScrollPos || currentScrollPos <= 80
+      ? setIsHeaderShown(true)
+      : setIsHeaderShown(false)
+    prevScrollPos = currentScrollPos
+  })
+
+  window.addEventListener("resize", () => setWindowWidth(window.innerWidth))
 
   return (
-    <header>
+    <header
+      className={`${isHeaderShown ? headerStyles.show : headerStyles.hide}`}
+    >
       <div className={headerStyles.headerWrapper}>
         <h1 className={headerStyles.brand}>RO</h1>
         {windowWidth > 991.98 ? (
@@ -21,6 +32,7 @@ const Header = () => {
           <Sidebar
             isSidebarOpen={isSidebarOpen}
             setIsSidebarOpen={setIsSidebarOpen}
+            setIsHeaderShown={setIsHeaderShown}
           />
         )}
       </div>

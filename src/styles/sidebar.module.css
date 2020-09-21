@@ -9,7 +9,7 @@
   font-size: 1.5rem;
   padding: 1em;
   transition: transform 400ms ease-in;
-  z-index: 1;
+  z-index: 2;
 }
 
 .show {
@@ -43,7 +43,11 @@
 }
 
 .link {
-  color: #ffffff;
   margin: 1.5rem 0;
   border-bottom: 2px solid #ffffff;
+}
+
+.link a {
+  color: #ffffff;
+  text-decoration: none;
 }

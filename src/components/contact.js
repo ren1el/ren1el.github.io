@@ -1,10 +1,32 @@
-import React from "react"
+import React, { useEffect } from "react"
 import contactStyles from "../styles/contact.module.css"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 const Contact = () => {
+  const controls = useAnimation()
+  const [ref, inView] = useInView({
+    threshold: 1,
+  })
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible")
+    }
+  }, [controls, inView])
+
   return (
     <section id="contact">
-      <div className={contactStyles.contactWrapper}>
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 50 },
+        }}
+        className={contactStyles.contactWrapper}
+      >
         <p className={contactStyles.heading}>It was great having you! :)</p>
         <p className={contactStyles.heading}>
           Feel free to contact me @{" "}
@@ -14,7 +36,7 @@ const Contact = () => {
             <a href="mailto:webmaster@example.com">renielxocampo@gmail.com</a>
           </span>
         </p>
-      </div>
+      </motion.div>
     </section>
   )
 }

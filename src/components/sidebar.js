@@ -2,7 +2,12 @@ import React from "react"
 import Burger from "./burger"
 import sidebarStyles from "../styles/sidebar.module.css"
 
-const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
+const Sidebar = ({ isSidebarOpen, setIsSidebarOpen, setIsHeaderShown }) => {
+  const closeSidebar = () => {
+    setIsSidebarOpen(false)
+    setIsHeaderShown(false)
+  }
+
   return (
     <>
       <Burger setIsSidebarOpen={setIsSidebarOpen} />
@@ -19,18 +24,22 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         </button>
         <ul className={sidebarStyles.links}>
           <li className={sidebarStyles.link}>
-            <a href="#about" onClick={() => setIsSidebarOpen(false)}>
+            <a href="#about" onClick={closeSidebar}>
               About
             </a>
           </li>
           <li className={sidebarStyles.link}>
-            <a href="#projects" onClick={() => setIsSidebarOpen(false)}>
+            <a href="#projects" onClick={closeSidebar}>
               Projects
             </a>
           </li>
-          <li className={sidebarStyles.link}>Résumé</li>
           <li className={sidebarStyles.link}>
-            <a href="#contact" onClick={() => setIsSidebarOpen(false)}>
+            <a href="http://www.google.com/" onClick={closeSidebar}>
+              Résumé
+            </a>
+          </li>
+          <li className={sidebarStyles.link}>
+            <a href="#contact" onClick={closeSidebar}>
               Contact
             </a>
           </li>

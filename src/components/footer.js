@@ -6,7 +6,11 @@ const Footer = () => {
     <footer>
       <div className={footerStyles.footerWrapper}>
         <h1 className={footerStyles.brand}>RO</h1>
-        <p>{"Designed & Coded by Reniel Ocampo"}</p>
+        <p className={footerStyles.credit}>
+          {"Designed & Coded by"}
+          <br />
+          <strong>{"Reniel Ocampo"}</strong>
+        </p>
       </div>
     </footer>
   )
