@@ -28,7 +28,7 @@ const Projects = ({ isAboutAnimationDone }) => {
         <Card
           isAboutAnimationDone={isAboutAnimationDone}
           order={1}
-          thumbnail={"https://i.postimg.cc/fWr2y6HT/zyllabi.png"}
+          thumbnail={"https://i.postimg.cc/vHKpMJn9/3.png"}
           type={"Side Project"}
           title={"Zyllabi"}
           description={
@@ -61,6 +61,18 @@ const Projects = ({ isAboutAnimationDone }) => {
         <Card
           isAboutAnimationDone={isAboutAnimationDone}
           order={3}
+          thumbnail={"https://i.postimg.cc/bw8Npj8r/2-copy.png"}
+          type={"Side Project"}
+          title={"E-commerce Landing Page Concept"}
+          description={
+            "A responsive e-commerce landing page that mimics online fashion product websites. Created using HTML, CSS and pure JavaScript and implements design qualities similar to professionally made websites (sliding sidebar, CSS & JavaScript animations, CSS flexbox techniques, responsiveness with media queries, etc.)"
+          }
+          tags={["Web Development"]}
+          url={""}
+        />
+        <Card
+          isAboutAnimationDone={isAboutAnimationDone}
+          order={4}
           thumbnail={"https://i.postimg.cc/fWr2y6HT/zyllabi.png"}
           type={"Class Project"}
           title={"Sleep Tracker"}

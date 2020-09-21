@@ -62,24 +62,28 @@ const About = ({ setIsAboutAnimationDone }) => {
                 <LinkButton
                   text={"GitHub"}
                   linkTo={"https://github.com/ren1el"}
+                  github
                 />
               </li>
               <li>
                 <LinkButton
                   text={"LinkedIn"}
                   linkTo={"https://www.linkedin.com/in/renielocampo/"}
+                  linkedin
                 />
               </li>
               <li>
                 <LinkButton
                   text={"Instagram"}
                   linkTo={"https://www.instagram.com/ren1el/"}
+                  instagram
                 />
               </li>
               <li>
                 <LinkButton
                   text={"Dribbble"}
                   linkTo={"https://dribbble.com/ren1el"}
+                  dribbble
                 />
               </li>
             </ul>
