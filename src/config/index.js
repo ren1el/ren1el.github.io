@@ -28,11 +28,11 @@ module.exports = {
   navLinks: [
     {
       name: "About",
-      url: "#about",
+      url: "/#about",
     },
     {
       name: "Projects",
-      url: "#projects",
+      url: "/#projects",
     },
     {
       name: "Résumé",
@@ -40,7 +40,7 @@ module.exports = {
     },
     {
       name: "Contact",
-      url: "#contact",
+      url: "/#contact",
     },
   ],
   footerLinks: [

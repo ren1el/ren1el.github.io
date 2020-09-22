@@ -38,3 +38,9 @@ footer {
   padding-bottom: 2px;
   border-bottom: 2px solid #ffffff;
 }
+
+@media (max-width: 575.98px) {
+  .credit {
+    font-size: 0.8rem;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import config from "../config/index"
 import "../styles/navbar.module.css"
 
@@ -10,7 +11,11 @@ const Navbar = () => {
       <ul>
         {navLinks.map(navLink => (
           <li key={`navLink${navLink.name}`}>
-            <a href={navLink.url}>{navLink.name}</a>
+            {navLink.url.startsWith("/#") ? (
+              <Link to={navLink.url}>{navLink.name}</Link>
+            ) : (
+              <a href={navLink.url}>{navLink.name}</a>
+            )}
           </li>
         ))}
       </ul>

@@ -97,3 +97,9 @@
     padding: 1.5em 0;
   }
 }
+
+@media (max-width: 300px) {
+  .picture {
+    max-width: 100%;
+  }
+}

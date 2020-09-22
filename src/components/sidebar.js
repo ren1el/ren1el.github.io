@@ -1,14 +1,14 @@
 import React from "react"
 import config from "../config/index"
 import Burger from "./burger"
+import { Link } from "gatsby"
 import sidebarStyles from "../styles/sidebar.module.css"
 
-const Sidebar = ({ isSidebarOpen, setIsSidebarOpen, setIsHeaderShown }) => {
+const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const { navLinks } = config
 
-  const closeSidebar = () => {
+  const onLinkClicked = () => {
     setIsSidebarOpen(false)
-    setIsHeaderShown(false)
   }
 
   return (
@@ -28,9 +28,15 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen, setIsHeaderShown }) => {
         <ul className={sidebarStyles.links}>
           {navLinks.map(navLink => (
             <li className={sidebarStyles.link}>
-              <a href={navLink.url} onClick={closeSidebar}>
-                {navLink.name}
-              </a>
+              {navLink.url.startsWith("/#") ? (
+                <Link to={navLink.url} onClick={onLinkClicked}>
+                  {navLink.name}
+                </Link>
+              ) : (
+                <a href={navLink.url} onClick={onLinkClicked}>
+                  {navLink.name}
+                </a>
+              )}
             </li>
           ))}
         </ul>

@@ -30,8 +30,20 @@
   );
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 635px) {
   .contact-wrapper {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-wrapper {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .contact-wrapper {
+    font-size: 1rem;
   }
 }
