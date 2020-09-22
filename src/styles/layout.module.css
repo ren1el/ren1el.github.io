@@ -1,8 +1,9 @@
 .main-wrapper {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -17,9 +18,3 @@
     padding: 0 2rem;
   }
 }
-
-/* @media (max-width: 575.98px) {
-  .content-wrapper {
-    margin: 0 2rem;
-  }
-} */

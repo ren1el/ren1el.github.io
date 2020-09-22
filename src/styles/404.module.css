@@ -1,0 +1,10 @@
+.wrapper {
+  text-align: center;
+}
+
+.page-not-found {
+  margin: 0;
+  color: #6f2525;
+  font-size: 5rem;
+  font-weight: 700;
+}

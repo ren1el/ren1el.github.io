@@ -5,7 +5,7 @@ import Sidebar from "../components/sidebar"
 import headerStyles from "../styles/header.module.css"
 
 const Header = () => {
-  const { siteShortTitle } = config
+  const { siteShortTitle, siteUrl } = config
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [isHeaderShown, setIsHeaderShown] = useState(true)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -28,7 +28,7 @@ const Header = () => {
     >
       <div className={headerStyles.headerWrapper}>
         <h1 className={headerStyles.brand}>
-          <a href="#intro">{siteShortTitle}</a>
+          <a href={siteUrl}>{siteShortTitle}</a>
         </h1>
         {windowWidth > 991.98 ? (
           <Navbar />

@@ -3,14 +3,14 @@ import config from "../config/index"
 import footerStyles from "../styles/footer.module.css"
 
 const Footer = () => {
-  const { footerLinks } = config
+  const { siteUrl, footerLinks } = config
   const link = footerLinks[0]
 
   return (
     <footer>
       <div className={footerStyles.footerWrapper}>
         <h1 className={footerStyles.brand}>
-          <a href="#intro">RO</a>
+          <a href={siteUrl}>RO</a>
         </h1>
         <p className={footerStyles.credit}>
           {"Designed & coded by"}
