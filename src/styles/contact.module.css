@@ -36,9 +36,15 @@
   }
 }
 
+@media (max-width: 450px) {
+  .contact-wrapper {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 360px) {
   .contact-wrapper {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 

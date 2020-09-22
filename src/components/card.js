@@ -9,12 +9,12 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"
 const Card = ({
   isAboutAnimationDone,
   order,
-  thumbnail,
+  thumbnailFile,
   type,
   title,
   description,
   tags,
-  url,
+  liveUrl,
   githubUrl,
 }) => {
   const data = useStaticQuery(graphql`
@@ -51,11 +51,12 @@ const Card = ({
       >
         <Img
           className={`${cardStyles.thumbnail} ${
-            order % 2 === 0 ? cardStyles.left : cardStyles.right
+            order % 2 === 0 ? cardStyles.right : cardStyles.left
           }`}
           fluid={
             data.images.nodes.find(
-              image => image.childImageSharp.fluid.originalName === thumbnail
+              image =>
+                image.childImageSharp.fluid.originalName === thumbnailFile
             ).childImageSharp.fluid
           }
           alt={`${title} screenshot`}
@@ -65,12 +66,16 @@ const Card = ({
           <div className={cardStyles.type}>{type}</div>
           <h3 className={cardStyles.title}>
             {title}{" "}
-            <a className={cardStyles.link} href={url}>
-              <FaExternalLinkAlt />
-            </a>
-            <a className={cardStyles.link} href={githubUrl}>
-              <FaGithub />
-            </a>
+            {liveUrl.length > 0 && (
+              <a className={cardStyles.link} href={liveUrl}>
+                <FaExternalLinkAlt />
+              </a>
+            )}
+            {githubUrl.length > 0 && (
+              <a className={cardStyles.link} href={githubUrl}>
+                <FaGithub />
+              </a>
+            )}
           </h3>
           <div className={cardStyles.description}>{description}</div>
           <ul className={cardStyles.tags}>
