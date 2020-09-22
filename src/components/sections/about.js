@@ -1,11 +1,14 @@
 import React, { useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import config from "../../config/index"
 import Img from "gatsby-image"
 import { motion, useAnimation } from "framer-motion"
 import LinkButton from "../linkButton"
 import aboutStyles from "../../styles/about.module.css"
 
 const About = ({ setIsAboutAnimationDone }) => {
+  const { socialMedia } = config
+
   const data = useStaticQuery(graphql`
     query Image {
       image: file(relativePath: { eq: "about/me.png" }) {
@@ -62,34 +65,11 @@ const About = ({ setIsAboutAnimationDone }) => {
           <div className={aboutStyles.links}>
             <strong>You can also find me at these places:</strong>
             <ul className={aboutStyles.aboutMeList}>
-              <li>
-                <LinkButton
-                  text={"GitHub"}
-                  linkTo={"https://github.com/ren1el"}
-                  github
-                />
-              </li>
-              <li>
-                <LinkButton
-                  text={"LinkedIn"}
-                  linkTo={"https://www.linkedin.com/in/renielocampo/"}
-                  linkedin
-                />
-              </li>
-              <li>
-                <LinkButton
-                  text={"Instagram"}
-                  linkTo={"https://www.instagram.com/ren1el/"}
-                  instagram
-                />
-              </li>
-              <li>
-                <LinkButton
-                  text={"Dribbble"}
-                  linkTo={"https://dribbble.com/ren1el"}
-                  dribbble
-                />
-              </li>
+              {socialMedia.map(socialLink => (
+                <li key={`socialLink${socialLink.name}`}>
+                  <LinkButton text={socialLink.name} linkTo={socialLink.url} />
+                </li>
+              ))}
             </ul>
           </div>
         </div>

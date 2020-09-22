@@ -1,9 +1,11 @@
 import React, { useState } from "react"
+import config from "../config/index"
 import Navbar from "../components/navbar"
 import Sidebar from "../components/sidebar"
 import headerStyles from "../styles/header.module.css"
 
 const Header = () => {
+  const { siteShortTitle } = config
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [isHeaderShown, setIsHeaderShown] = useState(true)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -26,7 +28,7 @@ const Header = () => {
     >
       <div className={headerStyles.headerWrapper}>
         <h1 className={headerStyles.brand}>
-          <a href="http://localhost:8000/">RO</a>
+          <a href="#intro">{siteShortTitle}</a>
         </h1>
         {windowWidth > 991.98 ? (
           <Navbar />

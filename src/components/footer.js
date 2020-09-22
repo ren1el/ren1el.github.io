@@ -1,18 +1,22 @@
 import React from "react"
+import config from "../config/index"
 import footerStyles from "../styles/footer.module.css"
 
 const Footer = () => {
+  const { footerLinks } = config
+  const link = footerLinks[0]
+
   return (
     <footer>
       <div className={footerStyles.footerWrapper}>
         <h1 className={footerStyles.brand}>
-          <a href="http://localhost:8000/">RO</a>
+          <a href="#intro">RO</a>
         </h1>
         <p className={footerStyles.credit}>
-          {"Designed & Coded by"}
+          {"Designed & coded by"}
           <br />
           <strong>
-            <a href="https://github.com/ren1el/portfolio">{"Reniel Ocampo"}</a>
+            <a href={link.url}>{link.name}</a>
           </strong>
         </p>
       </div>

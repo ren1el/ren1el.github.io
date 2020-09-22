@@ -1,8 +1,11 @@
 import React from "react"
+import config from "../config/index"
 import Burger from "./burger"
 import sidebarStyles from "../styles/sidebar.module.css"
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen, setIsHeaderShown }) => {
+  const { navLinks } = config
+
   const closeSidebar = () => {
     setIsSidebarOpen(false)
     setIsHeaderShown(false)
@@ -23,26 +26,13 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen, setIsHeaderShown }) => {
           X
         </button>
         <ul className={sidebarStyles.links}>
-          <li className={sidebarStyles.link}>
-            <a href="#about" onClick={closeSidebar}>
-              About
-            </a>
-          </li>
-          <li className={sidebarStyles.link}>
-            <a href="#projects" onClick={closeSidebar}>
-              Projects
-            </a>
-          </li>
-          <li className={sidebarStyles.link}>
-            <a href="http://www.google.com/" onClick={closeSidebar}>
-              Résumé
-            </a>
-          </li>
-          <li className={sidebarStyles.link}>
-            <a href="#contact" onClick={closeSidebar}>
-              Contact
-            </a>
-          </li>
+          {navLinks.map(navLink => (
+            <li className={sidebarStyles.link}>
+              <a href={navLink.url} onClick={closeSidebar}>
+                {navLink.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </>

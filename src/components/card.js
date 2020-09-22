@@ -32,8 +32,6 @@ const Card = ({
     }
   `)
 
-  console.log(`nodes: ${data.images.nodes}`)
-
   const [ref, inView] = useInView()
   const cardControls = useAnimation()
 

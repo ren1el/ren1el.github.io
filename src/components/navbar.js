@@ -1,22 +1,18 @@
 import React from "react"
+import config from "../config/index"
 import "../styles/navbar.module.css"
 
 const Navbar = () => {
+  const { navLinks } = config
+
   return (
     <nav>
       <ul>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="http://www.google.com/">Résumé</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        {navLinks.map(navLink => (
+          <li key={`navLink${navLink.name}`}>
+            <a href={navLink.url}>{navLink.name}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   )
