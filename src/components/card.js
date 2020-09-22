@@ -67,12 +67,22 @@ const Card = ({
           <h3 className={cardStyles.title}>
             {title}{" "}
             {liveUrl.length > 0 && (
-              <a className={cardStyles.link} href={liveUrl}>
+              <a
+                className={cardStyles.link}
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaExternalLinkAlt />
               </a>
             )}
             {githubUrl.length > 0 && (
-              <a className={cardStyles.link} href={githubUrl}>
+              <a
+                className={cardStyles.link}
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
             )}

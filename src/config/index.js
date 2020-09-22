@@ -86,7 +86,7 @@ module.exports = {
       title: "Sleep Tracker",
       description:
         "A minimal, hybrid iOS application that allows users to log overnight sleep and their “sleepiness” throughout the day. This was a project for my user interaction software class and demonstrates my ability to create simple mobile interfaces and adapt to new frameworks/libraries.",
-      thumbnailFile: "zyllabi.png",
+      thumbnailFile: "sleeptracker.png",
       type: "Class Project",
       tags: ["Ionic", "Mobile app development"],
       liveUrl: "",
