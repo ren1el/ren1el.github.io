@@ -54,9 +54,9 @@ const About = ({ setIsAboutAnimationDone }) => {
             <strong>University of California, Irvine</strong>. I attribute my
             start into programming when I began coding static HTML pages on
             Neopets. I’ve since grown an interest in web development, graphic
-            design, and computer architecture. Aside from developing I’m a big
-            reader, concert goer, and ukulele fiddler. I also really, really
-            like Ariana Grande.
+            design, and computer architecture. <br />
+            Aside from developing I’m a big reader, concert goer, and ukulele
+            fiddler. I also really, really like Ariana Grande (yuh).
           </div>
 
           <div className={aboutStyles.links}>

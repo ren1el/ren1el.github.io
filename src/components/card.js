@@ -44,48 +44,50 @@ const Card = ({
   }, [cardControls, inView, isAboutAnimationDone])
 
   return (
-    <motion.div
-      className={cardStyles.card}
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={cardControls}
-    >
-      <Img
-        className={`${cardStyles.thumbnail} ${
-          order % 2 === 0 ? cardStyles.left : cardStyles.right
-        }`}
-        fluid={
-          data.images.nodes.find(
-            image => image.childImageSharp.fluid.originalName === thumbnail
-          ).childImageSharp.fluid
-        }
-        alt={`${title} screenshot`}
-      />
+    <article>
+      <motion.div
+        className={cardStyles.card}
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={cardControls}
+      >
+        <Img
+          className={`${cardStyles.thumbnail} ${
+            order % 2 === 0 ? cardStyles.left : cardStyles.right
+          }`}
+          fluid={
+            data.images.nodes.find(
+              image => image.childImageSharp.fluid.originalName === thumbnail
+            ).childImageSharp.fluid
+          }
+          alt={`${title} screenshot`}
+        />
 
-      <div className={cardStyles.body}>
-        <div className={cardStyles.type}>{type}</div>
-        <div className={cardStyles.title}>
-          {title}{" "}
-          <a className={cardStyles.link} href={url}>
-            <FaExternalLinkAlt />
-          </a>
-          <a className={cardStyles.link} href={githubUrl}>
-            <FaGithub />
-          </a>
+        <div className={cardStyles.body}>
+          <div className={cardStyles.type}>{type}</div>
+          <h3 className={cardStyles.title}>
+            {title}{" "}
+            <a className={cardStyles.link} href={url}>
+              <FaExternalLinkAlt />
+            </a>
+            <a className={cardStyles.link} href={githubUrl}>
+              <FaGithub />
+            </a>
+          </h3>
+          <div className={cardStyles.description}>{description}</div>
+          <ul className={cardStyles.tags}>
+            {tags.map(tag => (
+              <li
+                className={cardStyles.tag}
+                key={`${tag} ${new Date().getTime()}`}
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className={cardStyles.description}>{description}</div>
-        <ul className={cardStyles.tags}>
-          {tags.map(tag => (
-            <li
-              className={cardStyles.tag}
-              key={`${tag} ${new Date().getTime()}`}
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </motion.div>
+      </motion.div>
+    </article>
   )
 }
 
