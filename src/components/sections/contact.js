@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import contactStyles from "../styles/contact.module.css"
+import contactStyles from "../../styles/contact.module.css"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 

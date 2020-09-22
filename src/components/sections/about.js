@@ -2,8 +2,8 @@ import React, { useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { motion, useAnimation } from "framer-motion"
-import LinkButton from "../components/linkButton"
-import aboutStyles from "../styles/about.module.css"
+import LinkButton from "../linkButton"
+import aboutStyles from "../../styles/about.module.css"
 
 const About = ({ setIsAboutAnimationDone }) => {
   const data = useStaticQuery(graphql`

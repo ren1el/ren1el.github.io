@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
-import introStyles from "../styles/intro.module.css"
+import introStyles from "../../styles/intro.module.css"
 
 const Intro = () => {
   const [ref, inView] = useInView()
