@@ -18,6 +18,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <motion.div
+        className={contactStyles.contactWrapper}
         ref={ref}
         animate={controls}
         initial="hidden"
@@ -25,7 +26,6 @@ const Contact = () => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 50 },
         }}
-        className={contactStyles.contactWrapper}
       >
         <p className={contactStyles.heading}>It was great having you! :)</p>
         <p className={contactStyles.heading}>

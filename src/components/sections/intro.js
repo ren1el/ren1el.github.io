@@ -14,16 +14,17 @@ const Intro = () => {
   }, [introControls, inView])
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={introControls}
-    >
-      <section className={introStyles.introWrapper}>
+    <section id="intro">
+      <motion.div
+        className={introStyles.introWrapper}
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={introControls}
+      >
         <p className={introStyles.hello}>Howdy! I’m Reniel.</p>
         <p className={introStyles.welcome}>Welcome to my portfolio.</p>
-      </section>
-    </motion.div>
+      </motion.div>
+    </section>
   )
 }
 
