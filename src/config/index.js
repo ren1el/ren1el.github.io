@@ -5,17 +5,17 @@ module.exports = {
   siteShortTitle: "RO",
   siteDescription:
     "Reniel Ocampo is a software engineer based in Orange County, California.",
-  siteUrl: "https://ren1el.github.io/",
+  siteUrl: "https://ren1el.github.io",
   siteLanguage: "en_US",
-  siteIcon: "",
+  siteIcon: "/favicon.png",
   socialMedia: [
     {
       name: "GitHub",
-      url: "https://github.com/ren1el/",
+      url: "https://github.com/ren1el",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/renielocampo/",
+      url: "https://linkedin.com/in/renielocampo",
     },
     {
       name: "Instagram",
