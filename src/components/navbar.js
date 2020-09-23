@@ -14,7 +14,9 @@ const Navbar = () => {
             {navLink.url.startsWith("/#") ? (
               <Link to={navLink.url}>{navLink.name}</Link>
             ) : (
-              <a href={navLink.url}>{navLink.name}</a>
+              <a href={navLink.url} target="_blank" rel="noopener noreferrer">
+                {navLink.name}
+              </a>
             )}
           </li>
         ))}

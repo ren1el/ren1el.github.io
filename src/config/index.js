@@ -37,7 +37,7 @@ module.exports = {
     },
     {
       name: "Résumé",
-      url: "https://google.com/",
+      url: "/resume.pdf",
     },
     {
       name: "Contact",

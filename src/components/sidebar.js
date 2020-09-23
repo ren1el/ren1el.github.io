@@ -33,7 +33,12 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
                   {navLink.name}
                 </Link>
               ) : (
-                <a href={navLink.url} onClick={onLinkClicked}>
+                <a
+                  href={navLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={onLinkClicked}
+                >
                   {navLink.name}
                 </a>
               )}
