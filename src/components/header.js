@@ -11,6 +11,7 @@ const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth)
     let prevScrollPos = window.pageYOffset
 
     window.addEventListener("scroll", () => {
@@ -32,15 +33,16 @@ const Header = () => {
         <h1 className={headerStyles.brand}>
           <a href={siteUrl}>{siteShortTitle}</a>
         </h1>
-        {windowWidth !== null && windowWidth > 991.98 ? (
-          <Navbar />
-        ) : (
-          <Sidebar
-            isSidebarOpen={isSidebarOpen}
-            setIsSidebarOpen={setIsSidebarOpen}
-            setIsHeaderShown={setIsHeaderShown}
-          />
-        )}
+        {windowWidth !== null &&
+          (windowWidth > 991.98 ? (
+            <Navbar />
+          ) : (
+            <Sidebar
+              isSidebarOpen={isSidebarOpen}
+              setIsSidebarOpen={setIsSidebarOpen}
+              setIsHeaderShown={setIsHeaderShown}
+            />
+          ))}
       </div>
     </header>
   )

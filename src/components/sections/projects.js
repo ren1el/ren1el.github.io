@@ -43,23 +43,17 @@ const Projects = ({ isAboutAnimationDone }) => {
         ))}
       </div>
 
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, x: -100 }}
-        animate={headingControls}
-      >
-        <div className={projectsStyles.githubLink}>
-          <a
-            className={projectsStyles.githubBtn}
-            href={"https://github.com/ren1el"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-            <span className={projectsStyles.ml}>{"View more on GitHub"}</span>
-          </a>
-        </div>
-      </motion.div>
+      <div className={projectsStyles.githubLink}>
+        <a
+          className={projectsStyles.githubBtn}
+          href={"https://github.com/ren1el"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+          <span className={projectsStyles.ml}>{"View more on GitHub"}</span>
+        </a>
+      </div>
     </section>
   )
 }
