@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className={footerStyles.footerWrapper}>
+      <div className={footerStyles.wrapper}>
         <h1 className={footerStyles.brand}>
           <a href={siteUrl}>RO</a>
         </h1>

@@ -1,14 +1,14 @@
 footer {
   width: 100%;
   height: 7em;
+  color: #ffffff;
   background-color: #6f2525;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
 }
 
-.footer-wrapper {
+.wrapper {
   width: 68.75rem;
   height: 100%;
   display: flex;
@@ -39,7 +39,7 @@ footer {
   border-bottom: 2px solid #ffffff;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
   .credit {
     font-size: 0.8rem;
   }

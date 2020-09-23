@@ -29,7 +29,7 @@ const Header = () => {
     <header
       className={`${isHeaderShown ? headerStyles.show : headerStyles.hide}`}
     >
-      <div className={headerStyles.headerWrapper}>
+      <div className={headerStyles.wrapper}>
         <h1 className={headerStyles.brand}>
           <a href={siteUrl}>{siteShortTitle}</a>
         </h1>

@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <motion.div
-        className={contactStyles.contactWrapper}
+        className={contactStyles.wrapper}
         ref={ref}
         animate={controls}
         initial="hidden"

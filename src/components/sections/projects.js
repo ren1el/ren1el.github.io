@@ -5,7 +5,6 @@ import { motion, useAnimation } from "framer-motion"
 import projectsStyles from "../../styles/projects.module.css"
 import Card from "../card"
 import ViewMoreButton from "../viewMoreButton"
-// import { FaGithub } from "react-icons/fa"
 
 const Projects = ({ isAboutAnimationDone }) => {
   const { projects } = config
@@ -43,7 +42,6 @@ const Projects = ({ isAboutAnimationDone }) => {
           />
         ))}
       </div>
-
       <ViewMoreButton />
     </section>
   )
