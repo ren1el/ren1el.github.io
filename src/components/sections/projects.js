@@ -4,7 +4,8 @@ import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
 import projectsStyles from "../../styles/projects.module.css"
 import Card from "../card"
-import { FaGithub } from "react-icons/fa"
+import ViewMoreButton from "../viewMoreButton"
+// import { FaGithub } from "react-icons/fa"
 
 const Projects = ({ isAboutAnimationDone }) => {
   const { projects } = config
@@ -43,17 +44,7 @@ const Projects = ({ isAboutAnimationDone }) => {
         ))}
       </div>
 
-      <div className={projectsStyles.githubLink}>
-        <a
-          className={projectsStyles.githubBtn}
-          href={"https://github.com/ren1el"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-          <span className={projectsStyles.ml}>{"View more on GitHub"}</span>
-        </a>
-      </div>
+      <ViewMoreButton />
     </section>
   )
 }

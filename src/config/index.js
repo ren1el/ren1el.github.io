@@ -1,5 +1,6 @@
 module.exports = {
   author: "Reniel Ocampo",
+  email: "renielxocampo@gmail.com",
   siteTitle: "Reniel Ocampo",
   siteShortTitle: "RO",
   siteDescription:

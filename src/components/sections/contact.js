@@ -1,9 +1,11 @@
 import React, { useEffect } from "react"
+import config from "../../config/index"
 import contactStyles from "../../styles/contact.module.css"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
 const Contact = () => {
+  const { email } = config
   const controls = useAnimation()
   const [ref, inView] = useInView({
     threshold: 1,
@@ -33,7 +35,7 @@ const Contact = () => {
           <span
             className={`${contactStyles.email} ${contactStyles.specialText}`}
           >
-            <a href="mailto:webmaster@example.com">renielxocampo@gmail.com</a>
+            <a href={`mailto:${email}`}>{email}</a>
           </span>
         </p>
       </motion.div>
