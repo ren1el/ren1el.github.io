@@ -60,7 +60,7 @@ module.exports = {
         "Google API",
         "Bootstrap",
       ],
-      liveUrl: "https://shielded-brushlands-61437.herokuapp.com/",
+      liveUrl: "https://shielded-brushlands-61437.herokuapp.com",
       githubUrl: "https://github.com/ren1el/zyllabi",
     },
     {
@@ -80,7 +80,7 @@ module.exports = {
       thumbnailFile: "ecommerce.png",
       type: "Side Project",
       tags: ["HTML", "CSS", "JavaScript", "Web development", "Web design"],
-      liveUrl: "",
+      liveUrl: "https://ren1el.github.io/ecommerce-landing-page",
       githubUrl: "https://github.com/ren1el/ecommerce-landing-page",
     },
     {
@@ -89,15 +89,15 @@ module.exports = {
         "A minimal, hybrid iOS application that allows users to log overnight sleep and their “sleepiness” throughout the day. This was a project for my user interaction software class and demonstrates my ability to create simple mobile interfaces and adapt to new frameworks/libraries.",
       thumbnailFile: "sleeptracker.png",
       type: "Class Project",
-      tags: ["Ionic", "Mobile app development"],
+      tags: ["Ionic", "Angular", "TypeScript", "Mobile app development"],
       liveUrl: "",
-      githubUrl: "",
+      githubUrl: "https://github.com/ren1el/sleeptracker",
     },
   ],
   footerLinks: [
     {
       name: "Reniel Ocampo",
-      url: "https://github.com/ren1el/portfolio/",
+      url: "https://github.com/ren1el/ren1el.github.io",
     },
   ],
 }
