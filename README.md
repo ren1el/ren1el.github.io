@@ -9,7 +9,7 @@
 </h1>
 
 <p align="center">
-  This is my first iteration of my web portfolio. It was built using <a href="https://www.gatsbyjs.com/">Gatsby</a> and hosted on my GitHub pages user site.
+  This is the first iteration of my web portfolio. It was built using <a href="https://www.gatsbyjs.com/">Gatsby</a> and hosted on my GitHub pages user site.
 </p>
 
 <img alt="demo" src="https://raw.githubusercontent.com/ren1el/ren1el.github.io/source/static/demo.png" />
