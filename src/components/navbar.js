@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import NavbarLink from "./navbarLink"
 import config from "../config/index"
 import "../styles/navbar.module.css"
 
@@ -9,15 +9,9 @@ const Navbar = () => {
   return (
     <nav>
       <ul>
-        {navLinks.map(navLink => (
+        {navLinks.map((navLink, index) => (
           <li key={`navLink${navLink.name}`}>
-            {navLink.url.startsWith("/#") ? (
-              <Link to={navLink.url}>{navLink.name}</Link>
-            ) : (
-              <a href={navLink.url} target="_blank" rel="noopener noreferrer">
-                {navLink.name}
-              </a>
-            )}
+            <NavbarLink navLink={navLink} index={index} />
           </li>
         ))}
       </ul>
