@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-  ren1el.github.io
+  reniel.github.io
 </h1>
 
 <p align="center">
