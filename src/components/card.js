@@ -32,7 +32,7 @@ const Card = ({
     }
   `)
 
-  const [ref, inView] = useInView({ threshold: 0.5 })
+  const [ref, inView] = useInView({ threshold: 0.75 })
   const cardControls = useAnimation()
 
   useEffect(() => {
