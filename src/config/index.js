@@ -60,7 +60,7 @@ module.exports = {
         "Google API",
         "Bootstrap",
       ],
-      liveUrl: "https://shielded-brushlands-61437.herokuapp.com",
+      liveUrl: "https://zyllabi.herokuapp.com/",
       githubUrl: "https://github.com/ren1el/zyllabi",
     },
     {
