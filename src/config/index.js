@@ -64,6 +64,22 @@ module.exports = {
       githubUrl: "https://github.com/ren1el/zyllabi",
     },
     {
+      title: "Clayformee",
+      description:
+        "A mobile-first e-commerce website for a client’s clay earring business. There were many decisions made for this project such as fitting to the client’s requirements, figuring out the best content management system, and creating an interface comparable to other modern product sites. These decisions all came together to create a chic, finalized ecommerce site that I’m really proud of!",
+      thumbnailFile: "clayformee.png",
+      type: "Side Project",
+      tags: [
+        "Gatsby",
+        "React",
+        "Redux",
+        "Styled Components",
+        "Shopify Storefront API",
+      ],
+      liveUrl: "https://clayformee.gtsb.io/",
+      githubUrl: "",
+    },
+    {
       title: "Animal Actions",
       description:
         "An Alexa skill that asks kids to follow a narrative story about animals and answer questions using their speech input. I worked with a team under a PhD student to iteratively develop this application and research ways to design voice user interfaces for children. I was mainly in charge of refactoring the codebase and implementing new features such as visuals.",
@@ -98,7 +114,7 @@ module.exports = {
       description:
         "The first iteration of my personal website--what you’re looking at now! I built it using Gatsby for the first time. It also makes use of HTML5 semantic elements as well as CSS3 flexbox layouts, media queries, and animations using the Framer Motion API. Creating it strengthened my skills in React and translating a website from concept to code.",
       thumbnailFile: "portfolio.png",
-      type: "Personal Project",
+      type: "Side Project",
       tags: [
         "Gatsby",
         "React",

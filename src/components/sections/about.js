@@ -59,7 +59,7 @@ const About = ({ setIsAboutAnimationDone }) => {
             Neopets. I’ve since grown an interest in web development, graphic
             design, and computer architecture. <br />
             Aside from developing I’m a big reader, concert goer, and ukulele
-            fiddler. I also really, really like Ariana Grande (yuh).
+            fiddler. I also really, really like Ariana Grande.
           </div>
 
           <div className={aboutStyles.links}>
