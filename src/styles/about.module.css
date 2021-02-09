@@ -98,8 +98,8 @@
   }
 }
 
-@media (max-width: 332px) {
+@media (max-width: 450px) {
   .picture {
-    max-width: 100%;
+    width: 100%;
   }
 }

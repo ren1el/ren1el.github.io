@@ -14,8 +14,8 @@ const About = ({ setIsAboutAnimationDone }) => {
       image: file(relativePath: { eq: "about/me.png" }) {
         id
         childImageSharp {
-          fixed(width: 300, quality: 100) {
-            ...GatsbyImageSharpFixed
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -47,7 +47,7 @@ const About = ({ setIsAboutAnimationDone }) => {
       >
         <Img
           className={`${aboutStyles.picture} ${aboutStyles.imgAnimation}`}
-          fixed={data.image.childImageSharp.fixed}
+          fluid={data.image.childImageSharp.fluid}
           alt="Me"
         />
         <div className={aboutStyles.text}>
