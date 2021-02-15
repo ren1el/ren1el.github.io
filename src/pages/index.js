@@ -8,7 +8,7 @@ import Intro from "../components/sections/intro"
 import About from "../components/sections/about"
 import Projects from "../components/sections/projects"
 import Contact from "../components/sections/contact"
-import "../../static/demo.png"
+import demo from "../../static/demo-small.png"
 
 const Home = () => {
   const { siteTitle, siteIcon } = config
@@ -22,10 +22,7 @@ const Home = () => {
         <title>{siteTitle}</title>
 
         <meta property="og:title" content="Reniel Ocampo" />
-        <meta
-          property="og:image"
-          content="https://raw.githubusercontent.com/ren1el/ren1el.github.io/source/static/demo.png"
-        />
+        <meta property="og:image" content={demo} />
         <meta
           property="og:description"
           content="Reniel Ocampo is a software engineer based in Orange County, California."
