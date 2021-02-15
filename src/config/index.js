@@ -68,7 +68,7 @@ module.exports = {
       description:
         "A mobile-first e-commerce website for a client’s clay earring business. There were many decisions made for this project such as fitting to the client’s requirements, figuring out the best content management system, and creating an interface comparable to other modern product sites. These decisions all came together to create a chic, finalized ecommerce site that I’m really proud of!",
       thumbnailFile: "clayformee.png",
-      type: "Side Project",
+      type: "Freelance Project",
       tags: [
         "Gatsby",
         "React",
